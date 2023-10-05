@@ -1,0 +1,14 @@
+D:\repos\Kattis\GoodMorning\bin\Debug\net7.0\GoodMorning.exe
+D:\repos\Kattis\GoodMorning\bin\Debug\net7.0\GoodMorning.deps.json
+D:\repos\Kattis\GoodMorning\bin\Debug\net7.0\GoodMorning.runtimeconfig.json
+D:\repos\Kattis\GoodMorning\bin\Debug\net7.0\GoodMorning.dll
+D:\repos\Kattis\GoodMorning\bin\Debug\net7.0\GoodMorning.pdb
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.AssemblyInfoInputs.cache
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.AssemblyInfo.cs
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.csproj.CoreCompileInputs.cache
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.dll
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\refint\GoodMorning.dll
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.pdb
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\GoodMorning.genruntimeconfig.cache
+D:\repos\Kattis\GoodMorning\obj\Debug\net7.0\ref\GoodMorning.dll
