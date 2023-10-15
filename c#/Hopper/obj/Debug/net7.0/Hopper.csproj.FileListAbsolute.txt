@@ -1,0 +1,14 @@
+D:\repos\open-kattis\c#\Hopper\bin\Debug\net7.0\Hopper.exe
+D:\repos\open-kattis\c#\Hopper\bin\Debug\net7.0\Hopper.deps.json
+D:\repos\open-kattis\c#\Hopper\bin\Debug\net7.0\Hopper.runtimeconfig.json
+D:\repos\open-kattis\c#\Hopper\bin\Debug\net7.0\Hopper.dll
+D:\repos\open-kattis\c#\Hopper\bin\Debug\net7.0\Hopper.pdb
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.AssemblyInfoInputs.cache
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.AssemblyInfo.cs
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.csproj.CoreCompileInputs.cache
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.dll
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\refint\Hopper.dll
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.pdb
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\Hopper.genruntimeconfig.cache
+D:\repos\open-kattis\c#\Hopper\obj\Debug\net7.0\ref\Hopper.dll
