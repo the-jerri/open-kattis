@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Hopper
 {
@@ -22,40 +21,60 @@ namespace Hopper
 
         public static int FindLongestExplorationSequence(int n, int D, int M, int[] arr)
         {
-            int[] dp = new int[n];
+            Dictionary<int, List<int>> graph = new Dictionary<int, List<int>>();
 
-            for (int i = 0; i < n; ++i)
+            // Build the graph
+            for (int i = 0; i < n; i++)
             {
-                // Initialize dp with 1 as each point is a valid path by itself.
-                dp[i] = 1;
-
-                // Loop to check each preceding element within index distance 'D'
-                for (int j = i - 1; j >= 0 && j >= i - D; --j)
+                graph[i] = new List<int>();
+                for (int j = i - D; j <= i + D; j++)
                 {
-                    if (Math.Abs(arr[i] - arr[j]) <= M)
+                    if (j >= 0 && j < n && i != j && Math.Abs(arr[i] - arr[j]) <= M)
                     {
-                        dp[i] = Math.Max(dp[i], dp[j] + 1);
-                    }
-                }
-
-                // Loop to check each succeeding element within index distance 'D'
-                for (int j = i + 1; j < n && j <= i + D; ++j)
-                {
-                    if (Math.Abs(arr[i] - arr[j]) <= M)
-                    {
-                        dp[i] = Math.Max(dp[i], dp[j] + 1);
+                        graph[i].Add(j);
                     }
                 }
             }
 
-            // Find the maximum among all dp values.
-            int maxSeq = 0;
-            foreach (var x in dp)
+            int maxPath = 0;
+
+            int DFS(int node, int[] memo, bool[] visited)
             {
-                maxSeq = Math.Max(maxSeq, x);
+                if (memo[node] != -1)
+                {
+                    return memo[node];
+                }
+
+                visited[node] = true;
+
+                int maxLength = 1;
+
+                foreach (int neighbor in graph[node])
+                {
+                    if (!visited[neighbor])
+                    {
+                        maxLength = Math.Max(maxLength, 1 + DFS(neighbor, memo, visited));
+                    }
+                }
+
+                visited[node] = false;
+                memo[node] = maxLength;
+
+                return maxLength;
             }
 
-            return maxSeq;
+            for (int i = 0; i < n; i++)
+            {
+                bool[] visited = new bool[n];
+                int[] memo = new int[n];
+                for (int j = 0; j < n; j++)
+                {
+                    memo[j] = -1;
+                }
+                maxPath = Math.Max(maxPath, DFS(i, memo, visited));
+            }
+
+            return maxPath;
         }
 
         public class Tokenizer
